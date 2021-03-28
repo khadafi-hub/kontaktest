@@ -7,17 +7,17 @@
     
     $email_subject = "Now Form Submission";
     
-    $email_body = User Name: $name.\n",
-    "User Email: $visitor_email.\n,
-    "User Message: $message.\n"
+    $email_body = "User Name: $name.\n".
+    "User Email: $visitor_email.\n".
+    "User Message: $message.\n";
 
     $to = "khadafikhadafi0@gmail.com"
 
-    $headrs = "From: $email_from\r\n";
+    $headers = "From: $email_from\r\n";
 
-    $headrs = "Replay-To: $visitor_email \r\n;";
+    $headers = "Replay-To: $visitor_email \r\n;";
 
-    mail($to,$email_subject,$email_body, shrederly);
+    mail($to,$email_subject,$email_body, $headers);
 
     header("Location: index.html")
 
