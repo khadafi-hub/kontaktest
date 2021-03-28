@@ -14,9 +14,7 @@
         $headers = "Reply-To: ".$visitor_email;
 
 
-        $email_body = "User Name: ".$name.".\n".
-                         "User Email: ".$visitor_email.".\n".
-                            "User Message: ".$message.".\n";
+        $email_body = "User Name: ";
 
 
 
