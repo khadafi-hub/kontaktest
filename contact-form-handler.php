@@ -13,7 +13,7 @@
 
     $to = "khadafikhadafi0@gmail.com"
 
-    $headrs = "From: $email_form\r\n";
+    $headrs = "From: $email_from\r\n";
 
     $headrs = "Replay-To: $visitor_email \r\n;";
 
