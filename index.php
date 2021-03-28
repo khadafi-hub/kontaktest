@@ -16,7 +16,7 @@
 
         <div class="contact-form" >
 
-            <form id="contact-form" method="post" actions="contact-form-handler.php">
+            <form id="contact-form" method="post" actions="contactform.php">
 
                 <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
                 
@@ -24,7 +24,7 @@
 
                 <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
 
-                <input type="submit" class="form-control submit" value="SEND MESSAGE" >
+                <button type="submit" name="submit">SEND MAIL</button>
                 
 
             </form>
