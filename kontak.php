@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
+    
 <html>
+    
     <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Contact Form Design</title>
-        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
@@ -28,5 +32,6 @@
             </form>
 
         </div>
+        
     </body>
 </html>
