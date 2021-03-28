@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Contact Form Design</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact form</title>
+</head>
 
-    <body>
-        <div class="contact-title">
-            <h1>Say Hello</h1>
-            <h2>We are always ready to serve you!</h2>
-        </div>
+<body>
 
-        <div class="contact-form" >
+<link href="contact-form.css" rel="stylesheet">
 
-            <form id="contact-form" method="post" actions="contactform.php">
+<div class="fcf-body">
 
-                <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-                
-                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
 
-                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-
-                <button type="submit" name="submit">SEND MAIL</button>
-                
-
-            </form>
-
-        </div>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
-    </body>
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+
+</body>
 </html>
